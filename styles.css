@@ -1,0 +1,30 @@
+.main{
+    margin-left: 30%;
+    margin-top: 10%;
+}
+table{
+    border: 10px solid darkgrey;
+    margin: 3px;
+    align-self: center;
+    background: black;
+    border-spacing: 10px;
+    align-items: center;
+    
+}
+th{
+    background: yellow;
+    border-color: white;
+    padding: 5px;
+    
+}
+td{
+    background: grey;
+    border-color: black ;
+    padding: 6px;
+}
+p{
+    align-items: center;
+    font-weight: bold;
+    font-size: larger;
+    margin-left: 17%;
+}
