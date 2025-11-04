@@ -1,1 +1,74 @@
-I have just learnt the tables concept and I have created a table using css and html.
+#HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body bgcolor="lightpink">
+    <div class="main">
+        <p>train</p>
+<table >
+    <tr style="background-color: pink;">
+        <th>train number</th>
+        <th>Depature</th>
+        <th>Arrival</th>
+        <th>Category</th>
+    </tr>
+    <tr>
+        <td>121212</td>
+        <td>12:12</td>
+        <td>12:12</td>
+        <td>duronto</td>
+    </tr>
+    <tr>
+        <td>121212</td>
+        <td>12:12</td>
+        <td>12:12</td>
+        <td>duronto</td>
+    </tr>
+    <tr>
+        <td>121212</td>
+        <td>12:12</td>
+        <td>12:12</td>
+        <td>duronto</td>
+    </tr>
+</table>
+</div>
+</body>
+</html>
+
+
+#CSS:
+.main{
+    margin-left: 30%;
+    margin-top: 10%;
+}
+table{
+    border: 10px solid darkgrey;
+    margin: 3px;
+    align-self: center;
+    background: black;
+    border-spacing: 10px;
+    align-items: center;
+    
+}
+th{
+    background: yellow;
+    border-color: white;
+    padding: 5px;
+    
+}
+td{
+    background: grey;
+    border-color: black ;
+    padding: 6px;
+}
+p{
+    align-items: center;
+    font-weight: bold;
+    font-size: larger;
+    margin-left: 17%;
+}
