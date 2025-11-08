@@ -1,0 +1,20 @@
+Patterns:
+why patterns:
+->> Patterns are solved to improve our skills in problem solving and also improves our efficiency in using loops.
+
+How to solve them
+->> Most of the patterns is solved using Nested for loops.
+->> outer Loop is for the no of rows.
+->> second is for the elements in the row.
+->> Observe the symmetry.
+
+points to be noted: 
+->> using or calling a function/class is less efficient than manipulating the line and printing.
+Example:
+we have to print this pattern
+1
+11
+111
+1111 
+instead of printing/calling System.out.println multiple times. we can use a string and append the 1 into the string and printing the line once in every loop.
+
