@@ -8,8 +8,18 @@ class gcd {
         }
         System.out.print(gcd);
     }
+    static void optimal(int a, int b){
+        while(a>0 && b>0){
+            if(a>b) a%=b;
+            else b%=a;
+        }
+        System.out.print((a==0)? b: a); 
+    }
+    
     public static void main(String[] args) {
-        int n1 = 13,n2 = 12;
+        int n1 = 12,n2 = 20;
         brute_forcef(n1, n2);
+        System.out.println();
+        optimal(n1,n2);
     }
 }
