@@ -1,35 +1,28 @@
-class Palindrome  {
-    public static void main(String[] args) {
-        String str = "aaabbaa a";
-        int ptr1 = 0;
-        int ptr2 = str.length() -1;
-        boolean isPalindrome = true; 
-        while(ptr1<ptr2){
-            char i = str.charAt(ptr1);
-            char j = str.charAt(ptr2);
-            if(!Character.isLetterOrDigit(i)){
-                ptr1++;
-                continue;
-            }
-            if(!Character.isLetterOrDigit(j)){
-                ptr2--;
-                continue;
-            }
-            if(Character.toLowerCase(i) ==Character.toLowerCase(j)){
-                ptr1++;
-                ptr2--;
-                isPalindrome = true;
-            }
-            else{
-                isPalindrome = false;   
-                break;
-            }
+class Solution{
+    static boolean palindrome_Check(String str,int i){
+        //base condition
+        int l = str.length();
+        if(i > l/2){
+            return true;
         }
-        if(isPalindrome){
-            System.out.println("isPalindrome");
+        if(str.charAt(i) != str.charAt(str.length() - i -1) ) {
+            return false;
         }
-        else System.out.println("is_Not_Palindrome");
+        i++;
+        return palindrome_Check(str,i);
     }
 }
-    
-
+class Main {
+    public static void main(String[] args) {
+        String str = "yyeyy";
+        Solution sol = new Solution();
+        boolean pal = sol.palindrome_Check(str,0);
+        if(pal){
+            System.out.println("Is_Palindrome");
+        }
+        else{
+            System.out.println("Is_Not_Palindrome");
+        }
+        
+    }
+}
